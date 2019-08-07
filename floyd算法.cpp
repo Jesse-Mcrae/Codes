@@ -1,0 +1,13 @@
+for(k=1;k<=n;k++)
+{
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n;j++)
+		{
+			if((d[i][k]!=INF)&&(d[k][j]!=INF)&&(d[i][k]+d[k][j])<d[i][j])
+			{
+				d[i][j]=d[i][k]+d[k][j];
+			}
+		}
+	}
+}
